@@ -1,0 +1,36 @@
+- Phương pháp lập trình
+	+ Lập trình không có cấu trúc (Ko thể tái sử dụng)
+	+ Lập trình thủ tục/ hàm (CTDL tách rời GT - hướng chức năng, trừu tượng 
+	hóa data)
+	+ OOP (từ C++ 1985->)
+	
+- C++
+	+ Toán tử phạm vi: '::' - scope
+	
+- Đa hình (con trỏ)
+	+ Cấp phát bộ nhớ: float *p = new float;
+	+ Giải phóng: delete p;
+	
+- Hàm:
+	+ Đối số có giá trị default
+	+ Biến:
+		. Biến tham trị
+		. Biến tham chiếu: &y = x
+		. Biến con trỏ
+		
+- Lập trình OOP (Object-oriented Programming):
+	+ Lấy đối tượng làm nền tảng để xây dựng chương trình
+	+ Gồm: Class vs. Object (Attribute & Method) . instance
+	+ 4 đặc điểm quan trọng:
+		. Tính trừu tượng (Abstraction): Khái quát hóa về một tập 
+		đối tượng có chung các đặc điểm vào trong chương trình
+		. Tính đóng gói (Encapsulation): 
+			/Đóng gói dữ liệu và hành vị vào class
+			/Để che giấu thông tin và chi tiết nội bộ để bên ngoài ko nhìn thấy
+		. Tính kế thừa (Inheritance): 
+		. Tính đa hình (Polymorphism):
+	
+	+ Ưu điểm:
+		. Kế thừa: Tái sử dụng
+		. Đóng gói: Che dấu
+		. Gần gũi với thế giới thực

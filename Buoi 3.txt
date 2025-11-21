@@ -1,0 +1,38 @@
+- Constructor:
+	+ Tham số măc nhiên " cPhanSo(int = 0, int = 1)"
+
+- Copy Constructor: (có default)
+	+ Sử dụng: " PhanSo k(p) "
+	+ Khi nào cần định nghĩa?: Thay vì sao chép hoàn toàn, thì ta
+	sao chép 1 phần.
+	+ Khai báo: " PhanSo(const PhanSo &p); "
+	+ truyền hằng tham chiếu để vừa tiết kiệm vùng nhớ, user ko thể thay đổi gtr
+	
+- Destructor: (Qtrong trong c++ vì có con trỏ, nếu ko có thì ko qtam)
+	+ Dx gọi khi đối tượng bị thu hồi.
+		./ Biến cục bộ trong hàm
+		./ Tự giải phóng: delete <biến>
+	+ Khai báo: " ~PhanSo() "
+	+ Chỉ có duy nhất 1 Destructor.
+
+- Lấy ra attribute (Giá trị Private)
+	+ hàm get, set
+	
+
+- Static member (cả attribute & method)
+	+ Thường là public: Là thành phần chung [1 vùng nhớ] cho tất cả các Object.
+	 .Tồn tại trc khi cả đối tượng chưa có.
+		./ VD: static string tenTruong (= UIT);
+			
+			   string SinhVien::tenTruong = "UIT";
+			
+	+ Phương thức static: Hàm của chung, hàm duy nhất (main)
+		./ Gọi SinhVien::Method1();
+		
+		
+*Bài tập
+- Tính ngày tháng năm --> đổi ra số -> tính ->> Đổi ngược lại
+- Sài string luôn thay vì char[]
+- tách 3 file
+
+

@@ -1,0 +1,27 @@
+- Class chứa class là attribute
+
+// Gọi constructor 
+TamGiac(double xA, double yA,...):A(xA, yA), B.., C..
+
+- Cấp phát động
+cPhanSo* ps = new cPhanSo[100];
+ps[0].Nhap();		(. chứ ko phải ->)
+..
+delete* ps;
+
+- Hàm bạn, lớp bạn
+	+ Vd: Class Vector, Class Matrix. Cần viết hàm nhân Vector x Matrix
+	+ // Sử dụng hàm get, set rất nhiều :)))
+	+ Giải pháp: 
+		./Hàm bạn (Ko thuộc lớp nào cả) -> Truy cập đến private
+				/// friend bool checkSNT(int);
+		./Lớp bạn -> Truy cập đến private của class khác
+				/// public:
+				///		friend class Jerry;
+				
+				/// **Ko có tính đối xứng, bắc cầu
+
+- Nguyên tắc xây dựng class
+	+ Nếu value tính dx thì ko cần khai báo ở attribute (class HinhTron{ float dientich})
+	+ Gộp các class lại (class .- class)
+	+ Nên có constructor

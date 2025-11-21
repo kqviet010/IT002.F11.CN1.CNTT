@@ -1,0 +1,40 @@
+---------------------------- Class ----------------------------
+- Cú pháp:
+class <tên_lớp>{
+	private: <Truy cập trong lớp>
+	
+	protected: <Ở chương Kế thừa>
+	
+	public: <Truy cập all>
+			void Nhap();
+};
+
+- Khai báo ra là object, 
+- Nếu ko khai báo phạm vi tường minh thì mặc định là private.
+
+
+- Tách file
+	+ File main
+	+ File header.h: Chứa khai báo class
+	+ File .cpp: Trien khai các phương thức
+
+- Con trỏ this
+	p.Nhap() // this là p
+	this->iTuSo;
+	
+- Constructor: 
+	+ Bất ký đối tượng nào dx khai báo đều phải gán giá trị.
+	+ Default Constructor: Tự định nghĩa
+	+ Nếu ta định nghĩa Constructor thì trình biên dịch sẽ ko sài default nữa
+		
+		// Khai báo
+		cPhanSo();
+		cPhanSo(int, int);
+	
+		// Định nghĩa
+		cPhanSo::cPhanSo(int a, int b){
+			this->iTuSo = a;
+			this->iTuSo = b;
+		}
+	
+	
