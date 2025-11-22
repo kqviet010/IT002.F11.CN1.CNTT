@@ -46,4 +46,4 @@ git pull origin main
 
 ### Screenshot
 
-[![Screenshot](https://i.ibb.co/RGTFHKLR/111.jpg)](https://github.com/Lissy93/web-check/tree/master/.github/screenshots)
+[![Screenshot](https://i.ibb.co/RGTFHKLR/111.jpg)](https://github.com/kqviet010/IT002.F11.CN1.CNTT)
