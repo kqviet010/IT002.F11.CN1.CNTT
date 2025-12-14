@@ -5,3 +5,13 @@ Trần Anh Dũng: dungta@uit.edu.vn
 	- QT: 40% (bài tập trong giờ học or off) 
 	- CK: 60% (có lý thuyết, đề đóng)
 
+
+*THI CK
+ko có trắc nghiệm
+./ Phần 1: Lý thuyết hỏi để hiểu (ko học thuộc)
+	+ đa hình là gì?
+	+ phân biệt constructor default vs. có tham số
+	
+./ Phần 2: Code giấy (basic về oop)
+
+./ Phần 3: BT có kế thừa và đa hình

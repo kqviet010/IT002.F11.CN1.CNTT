@@ -1,0 +1,54 @@
+============= Operator Overloading =============
+================================================
+
+- Ví dụ: Class PhanSo
+- Định nghĩa toán tử +, -, *, / , >>, <<, <=, >= , new, delete
+
+// class
+	- PhanSo operator+(PhanSo p); 				  // hàm thành phần thuộc class
+	- PhanSo operator+(int p);  				  // hàm thành phần thuộc class
+	- friend PhanSo operator+(int x, PhanSo p);   // hàm thành phần thuộc class
+	
+	- PhanSo operator>(PhanSo p);  				  // hàm thành phần thuộc class
+	- PhanSo operator<<(PhanSo p);  			  // hàm thành phần thuộc class
+
+// class.cpp
+	- PhanSo PhanSo::operator+(PhanSo p){
+	...
+}
+	- PhanSo PhanSo::operator+(int p){
+	...
+}
+
+- Hạn chế
+	+ Ko thể định nghĩa thêm toán tử
+	+ Ko thể kết hợp các toán tử
+
+- kq = 5 + B (error)
+	./ Phải định nghĩa hàm friend (Hàm toàn cục)
+		.// friend PhanSo operator+(int, PhanSo)		// file class
+		.// PhanSo operator+(int a, PhanSo p)			// file class.cpp
+
+- Mỗi operator có tới 3 hàm thì rất rườm rà  
+	./ VD: kq = B + 5;
+	./ Định nghĩa constructor 1 tham số => tự động chuyển kiểu cho số 5
+	
+	./ VD: kq = 5 + B;
+	./ friend PhanSo operator+(PhanSo p, PhanSo q);
+	
+	==> Mỗi toán tử sẽ chỉ cần 1 hàm.
+	//// constructor(PhanSo)
+	//// friend PhanSo operator+(PhanSo p, PhanSo q);
+	
+
+- sqrt(B) // Đưa vào phanso B => error
+	./ Định nghĩa phép toán chuyển kiểu: 
+		operator float(){ return 1.0*TuSo/MauSo};
+	./ Sửa lỗi oke.
+	
+- Phép gán: (khi có con trỏ)
+	./ Xóa bộ nhớ
+
+	
+	
+	

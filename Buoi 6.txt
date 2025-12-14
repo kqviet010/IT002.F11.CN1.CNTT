@@ -1,0 +1,49 @@
+- Operator<< (Xuất)
+	friend ostream& operator<<(ostream& os, cPhanSo p);
+	
+	
+- Operator>> (Nhập)
+	friend istream& operator>>(istream& is, cPhanSo& p);
+	
+- Operator[] (Lấy phần tử)
+	+ Vấn dề là private -> ko thể truy xuất ngoài dx
+	
+	(1) Lấy ra 
+	int& operator[](int vt){
+		return arr[vt];
+	}
+	// cout << A[2];
+	
+	
+	(2) Gán vào
+	// A[2] = -15;
+	
+	
+	(3) Đối tượng hằng
+	int operator[](int vt const){
+		return arr[vt];
+	}
+	
+- const
+	+ void Xuat() const;  				// Phương thức hằng
+	+ void setTuSo(const int &x);		// Biến hằng
+	
+- Operator() (Matrix[i][j])				// Tương tự operator[]
+	+ cout << matrix(2, 3);
+	
+- Operator++
+	++a: Tăng a và return;
+	a++: return trc và sau đó tăng a;
+	
+	// ++a
+	Time& operator++(){
+		second = second....
+		return *this;
+	}
+	
+	//a++
+	Time operator++(int){				  // Tham số giả
+		Time t = *this;
+		second = ++second....;
+		return t;
+	}			
